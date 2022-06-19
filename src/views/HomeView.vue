@@ -1,10 +1,16 @@
 <script>
   import HomeInfo from "../components/HomeInfo.vue";
+  import HomeLoginSignup from "../components/HomeLoginSignup.vue";
+  import SaleBanner from "../components/SaleBanner.vue";
+
 
   export default {
   name: 'App',
   components: {
-    HomeInfo
+    HomeInfo,
+    HomeLoginSignup,
+    SaleBanner,
+
 },
   data() {
     return {
@@ -20,19 +26,27 @@
 
 </script>
 
-<template>
-  <div>
-    <div class="h-screen m-8 flex flex-row space-x-4">
+<template> <!--color: "bg-[#111827]"--> <!-- <img src="../assets/logoig.png"/> -->
+<SaleBanner/>
+  <div class="m-10">
+
+    <div class="h-full flex flex-row space-x-4">
       <div class="p-10 border-solid border-2 border-sky-500 basis-1/2">
         <HomeInfo/>
       </div>
       <div class="p-10 border-solid border-2 border-sky-500 basis-1/2">
-        yopity yopity yo
+        <div class="grid grid-cols-1 gap-10">
+          <div class="basis-1/2">
+            <HomeLoginSignup/>
+          </div>
+        </div>
       </div>
     </div>
   </div>
+  
 </template>
 
-<style>
-  
+
+<style scoped>
+
 </style>
