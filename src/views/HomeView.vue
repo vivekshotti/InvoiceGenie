@@ -2,6 +2,7 @@
   import HomeInfo from "../components/HomeInfo.vue";
   import HomeLoginSignup from "../components/HomeLoginSignup.vue";
   import SaleBanner from "../components/SaleBanner.vue";
+  import GlobalFooter from "../components/GlobalFooter.vue";
 
 
   export default {
@@ -10,6 +11,7 @@
     HomeInfo,
     HomeLoginSignup,
     SaleBanner,
+    GlobalFooter
 
 },
   data() {
@@ -42,6 +44,10 @@
         </div>
       </div>
     </div>
+
+  </div>
+  <div class="m-10">
+    <GlobalFooter/>
   </div>
   
 </template>

@@ -1,7 +1,17 @@
-<script>
-  export default {
-      name: 'HomeLoginSignup',
-  } 
+<script setup>
+import { onMounted, ref } from "vue";
+import { useRoute, useRouter } from "vue-router";
+
+const route = useRoute();
+const router = useRouter();
+
+  // export default {
+  //     name: 'HomeLoginSignup',
+  // } 
+
+  async function authLogin() {
+    router.push({ name: "dashboard" })
+  }
 </script>
 
 <template> <!--items-center-->
@@ -44,7 +54,7 @@
     </div>
 
     <div class="LSHeader">
-      <button type="submit" class="mt-2 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
+      <button type="submit" class="mt-2 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" @click="authLogin">Submit</button>
     </div>
     </div>
 
@@ -54,7 +64,7 @@
             <div class="flex-grow border-t border-gray-400"></div>
     </div>
     <div class="SignupText">
-        <p id="helper-text-explanation" class="mt-2 text-sm text-gray-500 dark:text-gray-400">If you are new here or want to create a new account, please visit the <a href="#" class="font-medium text-blue-600 hover:underline dark:text-blue-500">New Accounts Registration</a> page.</p>     
+        <p id="helper-text-explanation" class="mt-2 text-sm text-gray-500 dark:text-gray-400">If you want to create a new account, please visit the <a href="#" class="font-medium text-blue-600 hover:underline dark:text-blue-500">New Accounts Registration</a> page.</p>     
     </div>
 
     
