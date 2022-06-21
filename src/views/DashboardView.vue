@@ -40,9 +40,14 @@ import NavDrawer from "../components/NavDrawer.vue";
           </ol>
         </nav>
       </div>
-      <div class="row-span-5">     
-
-      </div>
+      <!-- <div class="row-span-5 border-solid border-2">     
+        <div class="grid grid-rows-2 grid-flow-col">
+          <div class="border-solid border-2">01</div>
+          <div class="border-solid border-2">01</div>
+          <div class="border-solid border-2">01</div>
+          <div class="border-solid border-2">09</div>
+        </div>
+      </div> -->
       
 
     </div>
