@@ -33,10 +33,10 @@
   <div class="m-10">
 
     <div class="h-full flex flex-row space-x-4">
-      <div class="p-10 border-solid border-2 border-sky-500 basis-1/2">
+      <div class="p-10 border-solid border-2 border-blue-700 basis-1/2">
         <HomeInfo/>
       </div>
-      <div class="p-10 border-solid border-2 border-sky-500 basis-1/2">
+      <div class="p-10 border-solid border-2 border-blue-700 basis-1/2">
         <div class="grid grid-cols-1 gap-10">
           <div class="basis-1/2">
             <HomeLoginSignup/>

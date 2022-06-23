@@ -1,10 +1,12 @@
 <script>
 import NavDrawer from "../components/NavDrawer.vue";
+import TotalInvoicesChart1 from "../components/TotalInvoicesChart1.vue";
 
   export default {
   name: 'DashboardView',
   components: {
     NavDrawer,
+    TotalInvoicesChart1,
 
 },
   data() {
@@ -40,14 +42,31 @@ import NavDrawer from "../components/NavDrawer.vue";
           </ol>
         </nav>
       </div>
-      <!-- <div class="row-span-5 border-solid border-2">     
-        <div class="grid grid-rows-2 grid-flow-col">
-          <div class="border-solid border-2">01</div>
-          <div class="border-solid border-2">01</div>
-          <div class="border-solid border-2">01</div>
-          <div class="border-solid border-2">09</div>
+      <div class="row-span-5">     
+        <!-- <div class="flex-none grid grid-rows-2 grid-flow-col">
+          <div class="border-solid border-2">
+            <div class="total invoices">
+              <TotalInvoicesChart1 />
+            </div>
+          </div>
+          <div class="border-solid border-2">2</div>
+          <div class="border-solid border-2">3</div>
+          <div class="border-solid border-2">4</div>
+        </div> -->
+        <div class="container border-solid border-2">
+          <div class="center grid grid-cols-2 gap-4">
+            <div class="w-1/2 grid grid-rows-2">
+              <div>1</div>
+              <div>1</div>
+            </div>
+            <div class="w-1/2 grid grid-rows-3">
+              <div>2</div> 
+              <div>2</div> 
+              <div>2</div> 
+            </div>
+          </div>
         </div>
-      </div> -->
+      </div>
       
 
     </div>

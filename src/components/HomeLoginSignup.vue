@@ -49,7 +49,7 @@ const router = useRouter();
         <label for="remember" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-400">I agree with the <a href="#" class="text-blue-600 hover:underline dark:text-blue-500">terms and conditions</a>.</label>
       </div> -->
     <div class="LSHeader">
-      <p id="helper-text-explanation" class="mt-2 text-sm text-gray-500 dark:text-gray-400">We take privacy very seriously. Read our <a href="#" class="font-medium text-blue-600 hover:underline dark:text-blue-500">Privacy Policy</a> for more information.</p>
+      <p id="helper-text-explanation" class="mt-2 text-sm text-gray-500 dark:text-gray-400">We take privacy very seriously. Read our <a href="#" class="font-medium text-blue-600 hover:underline dark:text-blue-700">Privacy Policy</a> for more information.</p>
 
     </div>
 
@@ -64,7 +64,7 @@ const router = useRouter();
             <div class="flex-grow border-t border-gray-400"></div>
     </div>
     <div class="SignupText">
-        <p id="helper-text-explanation" class="mt-2 text-sm text-gray-500 dark:text-gray-400">If you want to create a new account, please visit the <a href="#" class="font-medium text-blue-600 hover:underline dark:text-blue-500">New Accounts Registration</a> page.</p>     
+        <p id="helper-text-explanation" class="mt-2 text-sm text-gray-500 dark:text-gray-400">If you want to create a new account, please visit the <a href="#" class="font-medium text-blue-600 hover:underline dark:text-blue-700">New Accounts Registration</a> page.</p>     
     </div>
 
     
