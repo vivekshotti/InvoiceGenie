@@ -1,27 +1,29 @@
 {
   "name": "invoicing-app-project",
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "A complete End-to-End Invoicing Solution",
+  "main": "index.js",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview --port 4173"
+    "install-server": "npm install --prefix server",
+    "install-client": "npm install --prefix client",
+    "install": "concurrently \"npm run install-server\" \"npm run install-client\"",
+    "server": "npm run watch --prefix server",
+    "client": "npm run dev --prefix client",
+    "watch": "concurrently \"npm run client\" \"npm run server\"",
+    "deploy": "npm run build --prefix client && npm start --prefix server ",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "dependencies": {
-    "@headlessui/vue": "^1.6.4",
-    "@vue-hero-icons/outline": "^1.7.2",
-    "animated-tailwindcss": "^3.3.0",
-    "chart.js": "^3.8.0",
-    "flowbite": "^1.4.7",
-    "pinia": "^2.0.14",
-    "vue": "^3.2.36",
-    "vue-google-charts": "^1.1.0",
-    "vue-router": "^4.0.15"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vivek-Hotti/InvoiceGenie.git"
   },
+  "author": "Vivek-Hotti",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Vivek-Hotti/InvoiceGenie/issues"
+  },
+  "homepage": "https://github.com/Vivek-Hotti/InvoiceGenie#readme",
   "devDependencies": {
-    "@vitejs/plugin-vue": "^2.3.3",
-    "autoprefixer": "^10.4.7",
-    "postcss": "^8.4.14",
-    "tailwindcss": "^3.1.2",
-    "vite": "^2.9.9"
+    "concurrently": "^7.2.2"
   }
 }
