@@ -16,10 +16,10 @@ const router = useRouter();
 
 <template> <!--items-center-->
 
-    <div class="grid grid-rows-5">
-
+    <div class="md:flex md:flex-col md:space-y-4">
+        <!-- <div class="md:m-10 relative flex py-5 items-center" data-v-239c5482=""><div class="flex-grow border-t border-gray-400" data-v-239c5482=""></div><div class="flex-grow border-t border-gray-400" data-v-239c5482=""></div></div> -->
       <div class="LSHeader">
-            <div class="flex flex-col text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-3xl">
+            <div class="flex flex-col md:text-3xl md:tracking-tight md:font-extrabold md:text-gray-900 text-2xl tracking-tight font-extrabold text-gray-900">
                 <div class="LSHeader">
                     💸🚀💸
                 </div>

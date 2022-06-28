@@ -29,8 +29,8 @@ import TotalInvoicesChart1 from "../components/TotalInvoicesChart1.vue";
         <NavDrawer/>
     </div>
   </div>
-  <div class="item2 col-span-5 bg-gray-100">
-    <div class="grid grid-rows-6 grid-flow-col">
+  <div class="item2 col-span-5 bg-gray-100 center">
+    <!-- <div class="grid grid-rows-9">
       <div class="row-span-1">
         <nav class="flex py-3 px-5 text-gray-700 bg-white border border-gray-200 dark:bg-gray-800 dark:border-gray-700" aria-label="Breadcrumb">
           <ol class="inline-flex items-center space-x-1 md:space-x-3">
@@ -42,34 +42,21 @@ import TotalInvoicesChart1 from "../components/TotalInvoicesChart1.vue";
           </ol>
         </nav>
       </div>
-      <div class="row-span-5">     
-        <!-- <div class="flex-none grid grid-rows-2 grid-flow-col">
-          <div class="border-solid border-2">
-            <div class="total invoices">
-              <TotalInvoicesChart1 />
-            </div>
-          </div>
-          <div class="border-solid border-2">2</div>
-          <div class="border-solid border-2">3</div>
-          <div class="border-solid border-2">4</div>
-        </div> -->
-        <div class="container border-solid border-2">
-          <div class="center grid grid-cols-2 gap-4">
+      <div class="row-span-8 border-solid border-2">   
+        <div class="center grid grid-cols-2 gap-4 h-full">
             <div class="w-1/2 grid grid-rows-2">
-              <div>1</div>
-              <div>1</div>
+              <div><TotalInvoicesChart1 /></div>
+              <div><TotalInvoicesChart1 /></div>
             </div>
             <div class="w-1/2 grid grid-rows-3">
-              <div>2</div> 
-              <div>2</div> 
-              <div>2</div> 
+              <div><TotalInvoicesChart1 /></div> 
+              <div><TotalInvoicesChart1 /></div> 
+              <div><TotalInvoicesChart1 /></div> 
             </div>
           </div>
         </div>
-      </div>
-      
+    </div> -->
 
-    </div>
   </div>
 </div>
 

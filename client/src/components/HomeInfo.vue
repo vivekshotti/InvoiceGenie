@@ -11,7 +11,7 @@
       <div class="">🤯</div> <!--animation to be added-->
       
     </div>
-    <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+    <p class="mt-3 text-base text-gray-500 ">
       InvoiceGenie lets you create invoices in a flick of a wind.<br/>
       It helps you monitor all your invoices, update their statuses, and track all your invoices & payments efficiently.<br/>
       <br/>
