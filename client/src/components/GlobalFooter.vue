@@ -28,10 +28,12 @@
 </ul>
 </div>
 <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8">
-<span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2022 <a href="https://flowbite.com" class="hover:underline">Vivek Shivakumar Hotti™</a>. All Rights Reserved.</span>
-<div class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">
-  <span class="text block text-sm text-gray-500 sm:text-center dark:text-gray-400">The site is best experienced on a computer</span>
-  <span class ="icon text-sm text-gray-400"> <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 5a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2h-2.22l.123.489.804.804A1 1 0 0113 18H7a1 1 0 01-.707-1.707l.804-.804L7.22 15H5a2 2 0 01-2-2V5zm5.771 7H5V5h10v7H8.771z" clip-rule="evenodd" /></svg></span>
+<span class="center block text-sm text-gray-500 sm:text-center dark:text-gray-400">©2022 <a href="https://www.linkedin.com/in/vivekhotti/" class="hover:underline"> Vivek Shivakumar Hotti</a>™. All Rights Reserved.</span>
+<div class="visible md:hidden block text-sm text-gray-500 sm:text-center dark:text-gray-400">
+  <center>
+    <span class="text block text-sm text-gray-500 sm:text-center dark:text-gray-400">The site is best experienced on a computer</span>
+    <span class ="icon text-sm text-gray-400"> <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 5a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2h-2.22l.123.489.804.804A1 1 0 0113 18H7a1 1 0 01-.707-1.707l.804-.804L7.22 15H5a2 2 0 01-2-2V5zm5.771 7H5V5h10v7H8.771z" clip-rule="evenodd" /></svg></span>
+  </center>
 </div>
 <!-- <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">Made with love in Mumbai, India. 🇮🇳 ❤️</span> -->
 </footer>

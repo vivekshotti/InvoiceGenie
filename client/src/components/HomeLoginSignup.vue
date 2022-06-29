@@ -17,8 +17,10 @@ const router = useRouter();
 <template> <!--items-center-->
 
     <div class="md:flex md:flex-col md:space-y-4">
-        <!-- <div class="md:m-10 relative flex py-5 items-center" data-v-239c5482=""><div class="flex-grow border-t border-gray-400" data-v-239c5482=""></div><div class="flex-grow border-t border-gray-400" data-v-239c5482=""></div></div> -->
-      <div class="LSHeader">
+      <span class = "inline md:hidden">
+        <hr class="my-5 border-gray-200 mx-auto dark:border-gray-700" />
+      </span>
+      <div class="hidden md:block">
             <div class="flex flex-col md:text-3xl md:tracking-tight md:font-extrabold md:text-gray-900 text-2xl tracking-tight font-extrabold text-gray-900">
                 <div class="LSHeader">
                     💸🚀💸
@@ -27,6 +29,9 @@ const router = useRouter();
                     Onwards to the moon, start here
                 </div>
             </div>
+      </div>
+      <div class="visible md:hidden text-2xl tracking-tight font-extrabold text-gray-900">
+        <center>LogIn To Your</center>
       </div>
 
       <div class="LSHeader1">
@@ -58,13 +63,17 @@ const router = useRouter();
     </div>
     </div>
 
-    <div class="relative flex py-5 items-center">
+    <div class="relative flex pt-3  md:py-3 items-center">
             <div class="flex-grow border-t border-gray-400"></div>
                  <span class="flex-shrink mx-4 text-gray-400">OR</span>
             <div class="flex-grow border-t border-gray-400"></div>
     </div>
     <div class="SignupText">
-        <p id="helper-text-explanation" class="mt-2 text-sm text-gray-500 dark:text-gray-400">If you want to create a new account, please visit the <a href="#" class="font-medium text-blue-600 hover:underline dark:text-blue-700">New Accounts Registration</a> page.</p>     
+        <p id="helper-text-explanation" class="hidden md:block text-sm text-gray-500 dark:text-gray-400">If you want to create a new account, please visit the <a href="#" class="font-medium text-blue-600 hover:underline dark:text-blue-700">New Accounts Registration</a> page.</p>     
+        <!-- <p id="helper-text-explanation" class="visible md:hidden text-sm text-gray-500 dark:text-gray-400"><a href="#" class="font-medium text-blue-600 hover:underline dark:text-blue-700">Signup</a></p>      -->
+    </div>
+    <div class="LSHeader">
+      <button type="submit" class="visible md:hidden mt-2 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Signup</button>
     </div>
 
     
