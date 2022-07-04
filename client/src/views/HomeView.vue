@@ -46,7 +46,7 @@
     </div>
 
   </div>
-  <div class="m-3 md:m-10">
+  <div class="m-5 md:m-10">
     <GlobalFooter/>
   </div>
   <!-- <div class="">

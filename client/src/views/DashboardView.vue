@@ -23,13 +23,13 @@ import TotalInvoicesChart1 from "../components/TotalInvoicesChart1.vue";
 </script>
 
 <template>
-<div class="grid-container grid grid-cols-6 divide-x">
+<!-- <div class="grid-container grid grid-cols-6 divide-x">
   <div class="h-screen item1 col-span-1 shadow-md">
     <div class="m-5">
         <NavDrawer/>
     </div>
   </div>
-  <div class="item2 col-span-5 bg-gray-100 center">
+  <div class="item2 col-span-5 bg-gray-100 center"> -->
     <!-- <div class="grid grid-rows-9">
       <div class="row-span-1">
         <nav class="flex py-3 px-5 text-gray-700 bg-white border border-gray-200 dark:bg-gray-800 dark:border-gray-700" aria-label="Breadcrumb">
@@ -57,8 +57,8 @@ import TotalInvoicesChart1 from "../components/TotalInvoicesChart1.vue";
         </div>
     </div> -->
 
-  </div>
-</div>
+  <!-- </div>
+</div> -->
 
 </template>
 

@@ -5,6 +5,12 @@
 </script>
 
 <template>
+    <div class="textLogo text-3xl md:text-5xl">
+      InvoiceGenie
+    </div>
+    <div class = "hidden md:block">
+      <br />
+    </div>
 
     <div class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
       Your One Stop <p class="underline underline-offset-8 decoration-blue-700">Invoicing Solution.</p><br/>
@@ -23,5 +29,7 @@
 </template>
 
 <style scoped>
-
+.textLogo {
+  font-family: "Imbue", Arial, Helvetica, sans-serif;
+}
 </style>

@@ -10,6 +10,10 @@ import { RouterLink, RouterView } from 'vue-router'
 
 </template>
 
-<!-- <style scoped>
+<style>
+@font-face {
+  font-family: "Imbue";
+  src: local("Imbue"), url(./fonts/Imbue-Bold.ttf) format("truetype");
+}
 
-</style> -->
+</style>
