@@ -8,7 +8,6 @@ async function startServer(){
     server.listen(PORT, () =>{
         console.log(`Server is Listening on port ${PORT}`)
     });
-    
 }
 
 startServer();
