@@ -9,8 +9,12 @@ const router = useRouter();
   //     name: 'HomeLoginSignup',
   // } 
 
-  async function authLogin() {
+  function authLogin() {
     router.push({ name: "dashboard" })
+  }
+
+  function signup() {
+    router.push({ name:"signup" })
   }
 </script>
 
@@ -69,11 +73,11 @@ const router = useRouter();
             <div class="flex-grow border-t border-gray-400"></div>
     </div>
     <div class="SignupText">
-        <p id="helper-text-explanation" class="hidden md:block text-sm text-gray-500 dark:text-gray-400">If you want to create a new account, please visit the <a href="#" class="font-medium text-blue-600 hover:underline dark:text-blue-700">New Accounts Registration</a> page.</p>     
+        <p id="helper-text-explanation" class="hidden md:block text-sm text-gray-500 dark:text-gray-400">If you want to create a new account, please visit the <a href="/InvoiceGenie/signup" class="font-medium text-blue-600 hover:underline dark:text-blue-700">New Accounts Registration</a> page.</p>     
         <!-- <p id="helper-text-explanation" class="visible md:hidden text-sm text-gray-500 dark:text-gray-400"><a href="#" class="font-medium text-blue-600 hover:underline dark:text-blue-700">Signup</a></p>      -->
     </div>
     <div class="LSHeader">
-      <button type="submit" class="visible md:hidden mt-2 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Signup</button>
+      <button type="submit" class="visible md:hidden mt-2 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" @click="signup">Signup</button>
     </div>
 
     
