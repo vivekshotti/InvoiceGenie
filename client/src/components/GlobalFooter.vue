@@ -10,7 +10,7 @@
 <div class="sm:flex sm:items-center sm:justify-between">
 <a href="#" class="flex items-center mb-4 sm:mb-0">
 <!-- <img src="/docs/images/logo.svg" class="mr-3 h-8" alt="Flowbite Logo"> -->
-<span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">InvoiceGenie</span>
+<span class="textLogo self-center text-2xl font-semibold whitespace-nowrap dark:text-white">InvoiceGenie</span>
 </a>
 <ul class="flex flex-wrap items-center mb-6 text-sm text-gray-500 sm:mb-0 dark:text-gray-400">
 <li>
@@ -44,6 +44,9 @@
 </template>
 
 <style>
+.textLogo {
+  font-family: "Imbue", Arial, Helvetica, sans-serif;
+}
   .text,
   .icon {
     vertical-align: middle;
