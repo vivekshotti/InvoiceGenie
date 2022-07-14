@@ -62,7 +62,7 @@ export default {
     </div>
   </div>
 
-  <!-- <div class="m-5 md:m-10">
+  <div class="m-5 md:m-10">
     <div class="md:h-full md:flex md:flex-row md:space-x-4">
       <div class="md:p-10 md:border-solid md:border-2 md:border-blue-700 md:basis-1/2 bg-blue-700">
         <HomePrivacyLeft/>
@@ -71,7 +71,7 @@ export default {
         <HomePrivacyRight/>
       </div>
     </div>
-  </div> -->
+  </div>
 
   <div class="m-5 md:m-10">
     <GlobalFooter/>
