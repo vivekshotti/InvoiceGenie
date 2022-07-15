@@ -1,13 +1,22 @@
-const app = require('./app');
-const http = require('http');
-require('dotenv').config()
-const PORT = process.env.PORT || 8000;
-const server = http.createServer(app);
+const express = require('express');
+const dotenv = require('dotenv');
+const connectDB = require('./config/db');
+const userRoutes = require('./routes/userRoutes');
 
-async function startServer(){
-    server.listen(PORT, () =>{
-        console.log(`Server is Listening on port ${PORT}`)
-    });
-}
+const app = express();
+dotenv.config();
+connectDB();
 
-startServer();
+app.use(express.json());
+
+app.get('/', (req, res)=>{
+    res.send("API is running");
+})
+
+app.use('/api/user', userRoutes);
+
+// TODO : Error handling middlewares Yet To Be Created
+
+const PORT = process.env.PORT || 5000
+
+app.listen(PORT, console.log(`Server started at PORT ${PORT}`));
