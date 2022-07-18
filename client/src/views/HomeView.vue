@@ -1,4 +1,5 @@
 <script>
+  import { onMounted, ref } from "vue";
   import HomeInfo from "../components/HomeInfo.vue";
   import HomeLoginSignup from "../components/HomeLoginSignup.vue";
   import SaleBanner from "../components/SaleBanner.vue";
@@ -7,6 +8,26 @@
   import HomeClientTrust from "../components/HomeClientTrust.vue";
   import HomePrivacyLeft from "../components/HomePrivacyLeft.vue";
   import HomePrivacyRight from "../components/HomePrivacyRight.vue";
+  import userAPI from "../api/user";
+  console.log("Fetching");
+
+  import cors from "cors";
+  
+
+  async function fetchData() {
+    console.log("Fetching");
+    try {
+      await userAPI.getAllUsers();
+    } catch (error) {
+      console.log(error)
+    } finally {
+      console.log("Fetched Successfully Maybe")
+    }
+  }
+
+    onMounted(() => {
+    fetchData();
+  });
 
 export default {
   name: 'App',
@@ -24,6 +45,10 @@ export default {
     return {
 
     }
+  },
+  mounted() {
+    console.log("Fetching");
+    fetchData();
   },
   methods:
   {
