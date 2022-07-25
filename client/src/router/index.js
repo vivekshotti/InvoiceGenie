@@ -7,6 +7,7 @@ import DashQuickInvoiceView from '../views/DashQuickInvoiceView.vue'
 import DashAllInvoicesView from '../views/DashAllInvoicesView.vue'
 import DashAnalyticsView from '../views/DashAnalyticsView.vue'
 import DashHelpView from '../views/DashHelpView.vue'
+import DashSettingsView from '../views/DashSettingsView.vue'
 import SignupView from '../views/SignupView.vue'
 
 const router = createRouter({
@@ -57,6 +58,11 @@ const router = createRouter({
       path: '/dash/help',
       name: 'dash-help',
       component: DashHelpView
+    },
+    {
+      path: '/dash/settings',
+      name: 'dash-settings',
+      component: DashSettingsView
     }
   ]
 })

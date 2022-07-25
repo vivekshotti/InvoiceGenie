@@ -3,7 +3,7 @@ import { createPinia } from 'pinia'
 import './index.css'
 import 'flowbite';
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faHouse, faChartLine, faFolderOpen, faJetFighterUp, faChartPie, faCircleQuestion } from '@fortawesome/free-solid-svg-icons'
+import { faHouse, faChartLine, faFolderOpen, faJetFighterUp, faChartPie, faCircleQuestion, faGear, faRightFromBracket } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import App from './App.vue'
 import router from './router'
@@ -14,6 +14,6 @@ const app = createApp(App).component('font-awesome-icon', FontAwesomeIcon)
 app.use(createPinia())
 app.use(router)
 
-library.add(faHouse, faChartLine, faJetFighterUp, faFolderOpen, faChartPie, faCircleQuestion)
+library.add(faHouse, faChartLine, faJetFighterUp, faFolderOpen, faChartPie, faCircleQuestion, faGear, faRightFromBracket)
 
 app.mount('#app')
