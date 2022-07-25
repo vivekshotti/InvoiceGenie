@@ -1,5 +1,4 @@
 <script>
-  import { onMounted, ref } from "vue";
   import HomeInfo from "../components/HomeInfo.vue";
   import HomeLoginSignup from "../components/HomeLoginSignup.vue";
   import SaleBanner from "../components/SaleBanner.vue";
@@ -9,25 +8,17 @@
   import HomePrivacyLeft from "../components/HomePrivacyLeft.vue";
   import HomePrivacyRight from "../components/HomePrivacyRight.vue";
   import userAPI from "../api/user";
-  console.log("Fetching");
-
-  import cors from "cors";
-  
 
   async function fetchData() {
-    console.log("Fetching");
+    console.log("Fetching Now:");
     try {
       await userAPI.getAllUsers();
     } catch (error) {
       console.log(error)
     } finally {
-      console.log("Fetched Successfully Maybe")
+      console.log("Fetched Successfully.")
     }
   }
-
-    onMounted(() => {
-    fetchData();
-  });
 
 export default {
   name: 'App',
@@ -97,7 +88,7 @@ export default {
       </div>
     </div>
   </div>
-
+  
   <div class="m-5 md:m-10">
     <GlobalFooter/>
   </div>

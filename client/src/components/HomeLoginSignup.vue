@@ -5,12 +5,8 @@ import { useRoute, useRouter } from "vue-router";
 const route = useRoute();
 const router = useRouter();
 
-  // export default {
-  //     name: 'HomeLoginSignup',
-  // } 
-
-  function authLogin() {
-    router.push({ name: "dashboard" })
+function authLogin() {
+    router.push({ name: "dash-home" })
   }
 
   function signup() {
