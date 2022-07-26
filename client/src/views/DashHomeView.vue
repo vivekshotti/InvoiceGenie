@@ -1,21 +1,39 @@
-<script>
+<script setup>
 import NavDrawer from "../components/NavDrawer.vue";
+import { onMounted, ref } from "vue";
+import userAPI from "../api/user";
+const users=ref(null);
 
-  export default {
-  name: 'DashHomeView',
-  components: {
-    NavDrawer,
-},
-  data() {
-    return {
-
+  async function fetchData() {
+    console.log("Fetching Now:");
+    try {
+      users.value = await userAPI.getAllUsers();
+    } catch (error) {
+      console.log(error)
+    } finally {
+      console.log("Fetched Successfully.")
     }
-  },
-  methods:
-  {
+  }
 
-  }
-  }
+  fetchData();
+
+  
+var current = new Date();
+let greetingMessage;
+if (current.getHours() >= 0 && current.getHours() <= 6)
+{
+  greetingMessage = "Early Morning Today User!🌌🌃🌌";
+}
+else if (current.getHours() >= 7 && current.getHours() <= 11)
+{
+  greetingMessage = "Hey There User! Good Morning!🌄🌞🌄";
+}
+else if (current.getHours() >= 12 && current.getHours() <= 17)
+{
+  greetingMessage = "Hey There User! Good Afternoon!🌄🌞🌄";
+} else {
+  greetingMessage = "Hey There User! Good Evening!🌆🌠🌆";
+}
 
 </script>
 
@@ -27,6 +45,7 @@ import NavDrawer from "../components/NavDrawer.vue";
     </div>
   </div>
   <div class="item2 col-span-5 bg-gray-100">
+    <!--Breadcrumbs-->
     <div class="flex flex-col bg-white border-b-2">
       <div class="breadcrumbs mx-5 my-3">
         <nav class="flex" aria-label="Breadcrumb">
@@ -52,6 +71,11 @@ import NavDrawer from "../components/NavDrawer.vue";
           </ol>
         </nav>
       </div>
+    </div>   
+    <div class="mx-5 my-3 text-center">
+      <text class="text-2xl">
+        {{ greetingMessage }}
+      </text>
     </div>
   </div>
 </div>
@@ -59,5 +83,6 @@ import NavDrawer from "../components/NavDrawer.vue";
 </template>
 
 <style scoped>
+
 
 </style>

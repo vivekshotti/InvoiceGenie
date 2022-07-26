@@ -1,21 +1,8 @@
-<script>
+<script setup>
 import NavDrawer from "../components/NavDrawer.vue";
+import RevenueTrend from "../components/RevenueTrendDashDashboardView.vue";
 
-  export default {
-  name: 'DashHomeView',
-  components: {
-    NavDrawer,
-},
-  data() {
-    return {
 
-    }
-  },
-  methods:
-  {
-
-  }
-  }
 
 </script>
 
@@ -27,7 +14,87 @@ import NavDrawer from "../components/NavDrawer.vue";
     </div>
   </div>
   <div class="item2 col-span-5 bg-gray-100">
-    <div class="flex flex-col bg-white border-b-2">
+    <div class="flex flex-col">
+      <!-- BreadCrumbs -->
+      <div class="flex flex-rows bg-white border-b-2">
+        <div class="breadcrumbs mx-5 my-3">
+          <nav class="flex" aria-label="Breadcrumb">
+            <ol class="inline-flex items-center space-x-1 md:space-x-3">
+              <li class="inline-flex items-center">
+                <a href="#" class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
+                  <div>
+                      <font-awesome-icon icon="fa-solid fa-chart-line" />
+                      Dashboard
+                  </div>
+                </a>
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+
+      <!-- Vitals Label -->
+      <div class="mx-5 my-3">
+        <text class="text-2xl">Vitals : </text>
+      </div>
+
+      <!-- Vitals Boxes -->
+      <div class="mx-5 space-x-5 flex flex-rows h-1/4">
+        <div class="w-1/3 bg-white rounded-[0.5rem] border-2 flex items-center">
+          <div class="px-5 py-4">
+            <div class="grid grid-cols-12">
+              <div class="col-span-6">Number of Invoice Payments due today: </div>
+              <div class="col-span-6 text-center">
+                <text class="text-5xl">4</text>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-1/3 bg-white rounded-[0.5rem] border-2 flex items-center">
+          <div class="px-5 py-4">
+            <div class="grid grid-cols-12">
+              <div class="col-span-6">Total Value of Invoice Payments due today: </div>
+              <div class="col-span-6 text-center">
+                <text class="text-5xl">₹99,800</text>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-1/3 bg-white rounded-[0.5rem] border-2 flex items-center">
+          <div class="px-5 py-4">
+            <div class="grid grid-cols-12">
+              <div class="col-span-4 flex items-center">Revenue Trend till now: </div>
+              <div class="col-span-8">
+                <RevenueTrend />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Overview Label -->
+      <!-- <div class="mx-5 my-3">
+        <text class="text-2xl">Overview : </text>
+      </div> -->
+
+      <!-- Overview Box -->
+      <!-- <div class="mx-5">
+        <div class="w-full h-max bg-white rounded-[0.5rem] border-2 flex items-center">
+          <div class="px-5 py-4">
+            <div class="w-full grid grid-rows-2 grid-flow-col gap-4">
+              <div class="w-1/2">01</div>
+              <div class="w-1/2">02</div>
+              <div class="w-1/2">03</div>
+              <div class="w-1/2">04</div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+    </div>
+
+    <!-- BreadCrumbs -->
+    <!-- <div class="flex flex-rows bg-white border-b-2">
       <div class="breadcrumbs mx-5 my-3">
         <nav class="flex" aria-label="Breadcrumb">
           <ol class="inline-flex items-center space-x-1 md:space-x-3">
@@ -39,22 +106,30 @@ import NavDrawer from "../components/NavDrawer.vue";
                 </div>
               </a>
             </li>
-            <!-- <li>
-              <div class="flex items-center">
-                <svg class="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
-                <a href="#" class="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white">Projects</a>
-              </div>
-            </li>
-            <li aria-current="page">
-              <div class="flex items-center">
-                <svg class="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
-                <span class="ml-1 text-sm font-medium text-gray-500 md:ml-2 dark:text-gray-400">Flowbite</span>
-              </div>
-            </li> -->
           </ol>
         </nav>
       </div>
-    </div>
+    </div> -->
+
+    <!-- Vitals Boxes -->
+    <!-- <div class="mx-5 my-3 space-x-5 flex flex-rows h-1/4">
+      <div class="w-1/3 bg-white rounded-[0.5rem] border-2">
+        <div class="px-5 py-4">
+          1
+        </div>
+      </div>
+      <div class="w-1/3 bg-white rounded-[0.5rem] border-2">
+        <div class="px-5 py-4">
+          1
+        </div>
+      </div>
+      <div class="w-1/3 bg-white rounded-[0.5rem] border-2">
+        <div class="px-5 py-4">
+          1
+        </div>
+      </div>
+    </div> -->
+
   </div>
 </div>
 
