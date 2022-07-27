@@ -8,7 +8,7 @@ import RevenueTrend from "../components/RevenueTrendDashDashboardView.vue";
 
 <template>
 <div class="grid-container grid grid-cols-6 divide-x">
-  <div class="h-screen col-span-1 shadow-md">
+  <div class="h-screen col-span-1">
     <div class="m-2">
         <NavDrawer/>
     </div>
@@ -92,44 +92,6 @@ import RevenueTrend from "../components/RevenueTrendDashDashboardView.vue";
       </div> -->
 
     </div>
-
-    <!-- BreadCrumbs -->
-    <!-- <div class="flex flex-rows bg-white border-b-2">
-      <div class="breadcrumbs mx-5 my-3">
-        <nav class="flex" aria-label="Breadcrumb">
-          <ol class="inline-flex items-center space-x-1 md:space-x-3">
-            <li class="inline-flex items-center">
-              <a href="#" class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
-                <div>
-                    <font-awesome-icon icon="fa-solid fa-chart-line" />
-                    Dashboard
-                </div>
-              </a>
-            </li>
-          </ol>
-        </nav>
-      </div>
-    </div> -->
-
-    <!-- Vitals Boxes -->
-    <!-- <div class="mx-5 my-3 space-x-5 flex flex-rows h-1/4">
-      <div class="w-1/3 bg-white rounded-[0.5rem] border-2">
-        <div class="px-5 py-4">
-          1
-        </div>
-      </div>
-      <div class="w-1/3 bg-white rounded-[0.5rem] border-2">
-        <div class="px-5 py-4">
-          1
-        </div>
-      </div>
-      <div class="w-1/3 bg-white rounded-[0.5rem] border-2">
-        <div class="px-5 py-4">
-          1
-        </div>
-      </div>
-    </div> -->
-
   </div>
 </div>
 

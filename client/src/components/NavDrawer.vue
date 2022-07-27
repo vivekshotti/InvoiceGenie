@@ -125,9 +125,8 @@ function logout()
 
 <style scoped>
 
-.navFooter {
- /* TODO : Place all items of NavFooter on Footer Bottom */
-}
+ /* TODO : navfooter class : Place all items of NavFooter on Footer Bottom */
+
 .textLogo {
   font-family: "Imbue", Arial, Helvetica, sans-serif;
 }
