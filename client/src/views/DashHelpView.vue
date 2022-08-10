@@ -55,6 +55,11 @@ import NavDrawer from "../components/NavDrawer.vue";
         </nav>
       </div>
     </div>
+    <div class="mx-5 my-3 text-center">
+      <text class="text-2xl">
+        Coming Soon ...
+      </text>
+    </div>
   </div>
 </div>
 
